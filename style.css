@@ -1,0 +1,206 @@
+/* =========================
+   Déclaration de la police
+========================= */
+@font-face {
+  font-family: "Fortalesia Script";
+  src: url("font/FortalesiaPlain_PERSONAL_USE_ONLY.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =========================
+   Reset & base
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: linear-gradient(
+    100deg,
+    #0A1A2F 0%,
+    #0A1A2FBE 60%,
+    #F5F7FA 100%
+  );
+}
+
+/* =========================
+   Navigation
+========================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  font-size: 18px;
+  color: #F5F7FA;
+  position: relative;
+  top: -100px;
+  transition: top 0.7s ease;
+  width: 100%;
+}
+
+.liste1 {
+  display: flex;
+  gap: 4em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #F5F7FA;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #C9A14A;
+}
+
+/* =========================
+   Logo & typographie signature
+========================= */
+.logo {
+  font-family: "Fortalesia Script", sans-serif;
+  font-size: 1.8em;
+  color: #C9A14A;
+}
+
+span {
+  font-family: "Fortalesia Script", sans-serif;
+  font-size: 2em;
+  color: #C9A14A;
+}
+
+/* =========================
+   Bouton principal
+========================= */
+.btn1 {
+  height: 40px;
+  width: 150px;
+}
+
+.btn1 {
+  height: 40px;
+  width: 150px;
+  border-radius: 8px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn2 {
+  height: 40px;
+  width: 150px;
+  border-radius: 8px;
+  border: 2px solid #ffffff;
+background: linear-gradient(
+    100deg,
+    #C9A14A 0%,
+    #C9A14A 60%,
+    #F5F7FA 100%
+  );  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #C9A14A;
+  color: #0A1A2F;
+}
+
+/* =========================
+   Header principal
+========================= */
+.header {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  padding: 60px;
+  border-radius: 60px;
+}
+
+/* =========================
+   Texte & image
+========================= */
+.texte {
+  width: 50%;
+  color: #F5F7FA;
+  line-height: 1.7;
+}
+
+.image {
+  width: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+}
+
+.bloc{
+  width: 500px;
+  height: 450px;
+    background: linear-gradient(135deg, #0a1a2f5b);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.bloc img {
+  width: 25%;
+  height: 52%;
+  object-fit: cover;
+  position: absolute;
+}
+.image1{
+  width: 100px;
+}
+.contact{
+  position: relative;
+  top: 8px;
+  width: 10px;
+}
+.telecharge{
+  position: relative;
+  top: 4px;
+    width: 16px;
+
+}
+/* =========================
+   Responsive (mobile)
+========================= */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+
+  .liste1 {
+    gap: 1.5em;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 40px;
+  }
+
+  .texte,
+  .image {
+    width: 100%;
+    text-align: center;
+  }
+}
